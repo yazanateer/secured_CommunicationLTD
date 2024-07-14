@@ -224,9 +224,6 @@ app.post('/login', async (req, res) => {
   try {
     //to use parametrize method to login to prevent sql inejction
     const findUserSql = 'SELECT * FROM users WHERE username = ?';
-
-
-
     database.query(findUserSql, [username], async (err, results) => {
       if (err) {
         console.error('Error in getting the user: ', err);

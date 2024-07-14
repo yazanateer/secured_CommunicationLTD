@@ -13,8 +13,6 @@ const user = {
   re_pass
 };
 
-
-
 try {
   const response = await fetch('http://localhost:3001/register', {
     method: 'POST',
