@@ -16,7 +16,6 @@ const port = 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-app.use(express.static('frontend'));
 
 let code_mail = 0 
 
